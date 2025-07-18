@@ -1,0 +1,23 @@
+paper link: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10496578
+
+data set link: https://www.kaggle.com/datasets/shebrahimi/financial-distress
+
+
+Note: read the data description properly and then proceed 
+
+
+The target variable is denoted by "Financial Distress" if it will be greater than -0.50 the company should be considered as healthy (0). Otherwise, it would be regarded as financially distressed (1).
+
+
+Algorithm
+=======================
+
+Existing System: SVM and K-means clustering and Network analysis 
+
+
+Proposed system - Ensemble learning , voting classifier and Random Forest 
+
+
+
+
+
