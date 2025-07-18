@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block dev %}
+
+<section id="testimonials" class="testimonials section-bg">
+  <center>
+      <div class="section-title" style="color: aqua;">
+          <h2>View Data</h2>
+      </div>
+
+      <div style="color: aqua;">
+          {{data|safe}}
+      </div>
+  </center>
+</section>
+
+{% endblock %}

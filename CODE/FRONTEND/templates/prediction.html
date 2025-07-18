@@ -1,0 +1,205 @@
+{% extends 'index.html' %}
+{% block dev %}
+
+<section id="contact" class="contact">
+  <center>
+
+  {% if prediction %}
+      <center>
+        <h2 style="color: aqua;">Prediction: {{prediction}}</h2><br>
+      </center>
+  {% endif %}
+
+  <div class="section-title">
+      <h2 style=" color: aqua;">Prediction</h2>
+  </div>
+
+  <div class="col-12">
+      <form action="{{url_for('prediction')}}" method="post" role="form" class="info">
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x2" step="0.0000000000000001" placeholder="x2" required>
+                </div><br>
+                
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x3" step="0.0000000000000001" placeholder="x3" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x5" step="0.0000000000000001" placeholder="x5" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x8" step="0.0000000000000001" placeholder="x8" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x9" step="0.0000000000000001" placeholder="x9" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x10" step="0.0000000000000001" placeholder="x10" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x12" step="0.0000000000000001" placeholder="x12" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x13" step="0.0000000000000001" placeholder="x13" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x14" step="0.0000000000000001" placeholder="x14" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x16" step="0.0000000000000001" placeholder="x16" required>
+                </div><br>
+          
+            </div>
+
+            <div class="col">
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x25" step="0.0000000000000001" placeholder="x25" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x36" step="0.0000000000000001" placeholder="x36" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x42" step="0.0000000000000001" placeholder="x42" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x44" step="0.0000000000000001" placeholder="x44" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x46" step="0.0000000000000001" placeholder="x46" required>
+                </div><br>
+          
+                <div class="form-group mt-3">
+                  <input style="height: 50px;" type="number" class="form-control" name="x47" step="0.0000000000000001" placeholder="x47" required>
+              </div><br>
+              
+              <div class="form-group mt-3">
+                  <input style="height: 50px;" type="number" class="form-control" name="x48" step="0.0000000000000001" placeholder="x48" required>
+              </div><br>
+          
+              <div class="form-group mt-3">
+                  <input style="height: 50px;" type="number" class="form-control" name="x49" step="0.0000000000000001" placeholder="x49" required>
+              </div><br>
+          
+              <div class="form-group mt-3">
+                  <input style="height: 50px;" type="number" class="form-control" name="x52" step="0.0000000000000001" placeholder="x52" required>
+              </div><br>
+          
+              <div class="form-group mt-3">
+                  <input style="height: 50px;" type="number" class="form-control" name="x53" step="0.0000000000000001" placeholder="x53" required>
+              </div><br>
+            </div>
+
+            <div class="col">
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x61" step="0.0000000000000001" placeholder="x61" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x62" step="0.0000000000000001" placeholder="x62" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x63" step="0.0000000000000001" placeholder="x63" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x64" step="0.0000000000000001" placeholder="x64" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x65" step="0.0000000000000001" placeholder="x65" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x66" step="0.0000000000000001" placeholder="x66" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x67" step="0.0000000000000001" placeholder="x68" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x68" step="0.0000000000000001" placeholder="x68" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x69" step="0.0000000000000001" placeholder="x69" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x70" step="0.0000000000000001" placeholder="x70" required>
+                </div><br>
+            </div>
+
+            <div class="col">
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x71" step="0.0000000000000001" placeholder="x71" required>
+                </div><br>
+             
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x72" step="0.0000000000000001" placeholder="x72" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x73" step="0.0000000000000001" placeholder="x73" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x74" step="0.0000000000000001" placeholder="x74" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x75" step="0.0000000000000001" placeholder="x75" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x76" step="0.0000000000000001" placeholder="x76" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x77" step="0.0000000000000001" placeholder="x78" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x78" step="0.0000000000000001" placeholder="x78" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x79" step="0.0000000000000001" placeholder="x79" required>
+                </div><br>
+            
+                <div class="form-group mt-3">
+                    <input style="height: 50px;" type="number" class="form-control" name="x81" step="0.0000000000000001" placeholder="x81" required>
+                </div><br>
+            </div>
+        </div>
+
+      
+      
+
+    
+
+    
+      
+      <div class="text-center"><button style="height: 50px; width: 300px;" type="submit" class="btn btn-primary">Submit</button></div>
+      </form>
+  </div>
+  </center>
+</section>
+
+
+  {% endblock %}
